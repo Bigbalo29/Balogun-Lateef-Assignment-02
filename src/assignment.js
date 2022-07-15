@@ -14,10 +14,11 @@ const assignment = {};
  * @returns number the sum of the numbers
  */
 function sumOfNumbers(arrayOfNumbers) {
-    let sum = 0;
-  for (let a of arrayOfNumbers)
-    sum += a;
-    return arrayOfNumbers.length;
+    let result = 0;
+  for (const element of arrayOfNumbers) {
+      result += element;
+  }
+    return result;
 }
 console.log(sumOfNumbers([10,20,30,40]))
 assignment.sumOfNumbers = sumOfNumbers;
